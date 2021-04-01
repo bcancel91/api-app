@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@300&family=Train+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/85b973685b.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <svg class="bi bi-chevron-right" width="32" height="32" viewBox="0 0 20 20" fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"></svg>
+    <path fill-rule="evenodd"
+      d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z">
+  </svg>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <!-- weather / site name -->
+    <div class="container-fluid" style="height: 300px;">
+     
+      <!-- <nav class="navbar navbar-light bg-light"> -->
+        <div class="row">
+
+           <!-- webpage title -->
+          <div class="col-4">
+            <div>
+      <h3 class="robotoText" style="padding-top:10%;">The Millennial Post</h3>
+      </div>
+          </div>
+
+          <!-- weather ouput -->
+          <div class="card mx-auto mt-5" style="width: 18rem;" >
+        <div class="card-body justify-content-center">
+        <h5 class="card-title" id="location">ATL</h5>
+        <h3 class="temp card-subtitle mb-2 text-muted">75</h3>
+        <p class="clouds card-text text-muted">Sunny</p>
+        <p class="description card-text text-muted">Hot AF</p>
+        <div id="picture">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- enter city name -->
+      <div class="col-4" >
+        <button  type="submit" class="submit float" style="margin-left: 10px; background-color: black; color: lightgray;" >submit</button>
+        <input type="text" placeholder="Enter the city" class="input_text float">
+      </div>
+
+      
+      
+        </div>
+   
+    </div>
+  
+
+
+ 
+<!-- Intro content-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8">
+      
+
+      <!-- Intro card -->
+      <div class="card shadow">
+        <img src="" class="card-img-top veganImg" alt="">
+        <div class="card-body" style="border: solid rgba(0,0,0,.125);">
+          <div>
+            
+            <h1>NEWS <span class="p-2 " style="border: solid 3px red; text-shadow: 2px 2.5px 0px #000;">flash</span></h1>
+          
+            <h2><strong>Grand opening or wWatever</strong></h2>
+        <H4>Check out our first issue ever.<br>
+        Probably the last... 
+        </h4>
+        <p></p>
+      </div>
+      
+      <!-- IRS card -->
+        <div class="irsCard" style="border: solid rgba(0,0,0,.125);">
+        <h3 class="d-flex justify-content-center robotoText" id="irsTitle">IRS Stimulus</h3>
+        <p class="robotoText p-3">Find out when and how the IRS sent your third Economic Impact Payment with the Get My Payment application. Get My Payment updates once a day... so no need to check 50 million times</p>
+        
+        <div class="p-3">
+          <h5 class="robotoText"><srong> Steps to track ya coin$$$</srong> </h5>
+        <ol class="robotoText">
+          <li>Check us out here </li>
+          <li>Browse our content</li>
+          <Li>Chill and pop a lid</Li>
+          <li>Then just click the link below and the rest is on you...</li>
+          <button class="btn btn-outline-dark btn-large mt-2"> <a style="text-decoration: none; color: lightgray;"href="https://www.irs.gov/coronavirus/get-my-payment" target="#">Go to Get My Payment</a></button>
+          <!-- https://media.giphy.com/media/y1Frnlhi4dzM4ZTJm6/giphy.gif -->
+        </ol>
+      </div>
+      </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-lg-4">
+       
+      <!-- cocktail card -->
+      <div class="card" style="width: 18rem;">
+        <h4 class="card-title d-flex justify-content-center">The Boozy Read</h4>
+        <img src="/images/mojo.jpeg" style="height: 300px; width: 287px;" class="card-img-top cocktailImg" alt="">
+        <div class="card-body">
+       
+         
+          <h5 class="card-title  drinkName">Mojito</h5>
+          <h6 id="l1">Ingredients</h6>
+          <ul>
+            <span><li class="noShow">Sugar</li></span>
+           <span><li class="noShow">Mint</li></span>
+           <span><li class="noShow">Lime </li></span>
+           <span><li class="noShow">Soda</li></span>
+           <span><li class="noShow">Rum</li></span>
+          </ul>
+          
+         
+          <p class="card-text1" style="width: 250px; height: 150px;overflow: scroll;">Place mint leaves and 1 lime wedge into a sturdy glass. Use a muddler to crush the mint and lime to release the mint oils and lime juice. Add 2 more lime wedges and the sugar, and muddle again to release the lime juice. Do not strain the mixture. Fill the glass almost to the top with ice. Pour the rum over the ice, and fill the glass with carbonated water. Stir, taste, and add more sugar if desired. Garnish with the remaining lime wedge.</p>
+          <button type="submit" id="submit3" class="btn btn-outline-dark btn-large mt-2"> <a href="#"  style="text-decoration: none; color: lightgray;">Click for more</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>   
+
+<div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col-4">
+      <img class="shadow"src="/images/covid1.jpg" style="height:375px; width:450px; border-radius: 50%;">
+    </div>
+    <div class="col-8">
+      <div >
+        <h2>The Millennial Post <strong style="font-size: 45px;">COVID-19 <span style="color: red">UPDATE</span></strong></h2>
+        <p class="p-4" style="font-family: 'Bebas Neue', cursive;">
+        Here we are again my millennial brothers and sisters, in the midst of yet another boomer-led economic meltdown. This time our parent's generation didn't cause the crisis, they control the government that let it fester until basically everyone in the country had to stop what they were doing and cower in their homes in fear.
+      </p>
+      <h4>Covid-19: E.U. Approves New Vaccine Production Sites
+      </h4>
+      <p style="font-family: 'Bebas Neue', cursive;"> The United States could soon have a glut of vaccine doses. Kansas, Minnesota and South Carolina said those 16 years and older would be eligible next week, and New Jersey said people 55 and older would be eligible on April 5.</p>
+      <button class="btn btn-outline-dark btn-large mt-2" ><a href="https://www.nytimes.com/live/2021/03/26/world/covid-vaccine-coronavirus-cases" style="text-decoration: none; color: lightgray;" >Continue article on Times</a></button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Vegan content -->
+  <div class="container-fluid p-3">
+    <div class="row">
+      <div class="col-6">
+        <h2 class="d-flex justify-content-center" style="font-family: 'Train One', cursive;">Vegan Sauce</h2>
+        <h5 id="articleTitle"></h5>
+        <div class="d-flex justify-content-center">
+        <img class="shadow" src="/images/vegan.jpg" style="height: 250px;width:
+         350px; border: red 1px solid;">
+        </div>
+    </div>
+        <div class="col-6">
+          <p class="articleText" id="articleText">ATLANTA — As a name for a food business, Slutty Vegan could have doomed the place from the start. Turns out, it was a really good idea.</p>
+        <p class="articleText">
+          At what is not much more than a takeout counter in a rapidly gentrifying historic black neighborhood west of downtown Atlanta, people stand in line for two or three hours to buy soy burgers with names like the Sloppy Toppy and the Ménage à Trois, served with a side of crinkle-cut fries dusted in Old Bay seasoning.</p>
+
+          <hr>
+          <p class="articleText">
+            The One Night Stand, a mess of a burger on a soft Hawaiian-style bun, is the best seller. It’s built with slices of vegan bacon and fake cheese on an Impossible Foods patty, piled with caramelized onions, tomato slices and chopped lettuce. The burger is finished with two generous squirts of sauce. One is red and has the tang of vinegar. The other is orange and tastes like Thousand Island’s thinner, spicier cousin.
+          </p>
+          <div>
+          <img src="/images/author-kim-severson-thumbLarge.jpg" style="height: 40px;width: 40px;">
+          <h6 class="mb-2">Kim Severson <span style="font-size: 14px;color: gray;">~ Author for The New York Times</span></h6>
+            <button class="btn btn-outline-dark btn-large mt-2"><a href="https://www.nytimes.com/2019/07/01/dining/slutty-vegan-burger-atlanta-restaurant.html" style="text-decoration: none; color: lightgray;" >Read More</a></button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <div  style="border-right: dotted 3px rgba(0,0,0,.125); border-bottom: dotted 3px  rgba(0,0,0,.125);" class="col-lg-6">
+        <div>
+          <h1 class="d-flex justify-content-center">Pits N Kits</h1>
+          <img class="shadow" src="/images/pit1.jpeg" style="border-radius: 100%; border: 5px black solid; height: 150px; width: 150px;">
+        
+          <img class="shadow" src="/images/pits.jpeg" style="border-radius: 100%; border: 5px black solid; height: 200px; width: 200px;">
+         
+          <img  class="shadow" src="/images/pit2.jpeg" style="border-radius: 100%; border: 5px black solid; height: 250px; width: 250px;">
+        </div>
+        <div class="mb-4">
+
+          <img class="shadow" src="/images/kits2.jpeg" style="border-radius: 100%; border: 5px black solid; height: 250px; width: 250px;">
+
+          <img class="shadow" src="/images/kits1.jpeg" style="border-radius: 100%; border: 5px black solid; height: 200px; width: 200px;">
+          
+          <img class="shadow" src="/images/kits3.jpeg" style="border-radius: 100%; border: 5px black solid; height: 150px; width: 150px;">
+        </div>
+      </div>
+      <div class="col-lg-6 adoptionInfo">
+        <div class="p-4">
+          <h3 class="">Be the GOAT n Adopt!</h3>
+        <p id="adoptText" style="height: 200px;">Animal shelters and rescue groups are brimming with happy, healthy pets just waiting for someone to take them home. Most shelter pets wound up there because of a human problem like a move or a divorce, not because the animals did anything wrong. Many are already house-trained and used to living with families. Usually when you adopt a pet, the cost of spay/neuter, first vaccinations (and sometimes even microchipping!) is included in the adoption price, which can save you some of the up front costs of adding a new member to your family. Depending on the animal, you may also save on housebreaking and training expenses. No one needs to see another selfie—unless it’s a selfie of you with the adorable pet you just adopted! Adopt a pet, post those pictures and let the well-earned likes roll in. Not only do animals give you unconditional love, but they have been shown to be psychologically, emotionally and physically beneficial to their companions. Caring for a pet can provide a sense of purpose and fulfillment and lessen feelings of loneliness. And when you adopt, you can also feel proud about helping an animal in need!</p>
+
+        
+        <h4>Interested in Adopting a friend</h4>
+        <button  class="btn btn-outline-dark btn-large mt-2"><a href = "https://www.adoptapet.com/" target="#" style="text-decoration: none; color: lightgray;">Click Here to learn more</a></button>
+      
+      </div>
+    </div>
+    </div>
+  
+    <!-- BEER & WINE  -->
+
+  <div class="container-fluid p-4">
+      <div class="row">
+       
+        <div class="col-lg-6" >
+    
+          <h1 style="text-shadow: 2px 2.5px 0px #000;font-family: 'Train One', cursive;">Brews N Hops</h1>
+          <a href="https://specsonline.com/shop/beer/saint-arnold-art-car-ipa-12pk-can/" target="#">
+          <img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft51.2885-15%2Fe35%2Fs480x480%2F162609736_1392874584393490_7852314264507863727_n.jpg%3Ftp%3D1%26_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D110%26_nc_ohc%3DA-audCrXqf4AX8j_ZyZ%26ccb%3D7-4%26oh%3D413ad738faf74cd74f64e38cec7c244a%26oe%3D6086205A%26_nc_sid%3Db9f2ee" class=" shadow img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"  style="border-radius: 02%" alt="">
+          </a>
+  <!-- Beer table section -->
+             <div>
+        <table>
+          <tbody>
+            <tr>
+              <td>Name</td>
+              <td>Art Car IPA</td>
+            </tr>
+            <tr>
+              <td>style</td>
+              <td>American IPA</td>
+            </tr>
+            <tr>
+              <td>brand</td>
+              <td><a href="https://www.saintarnold.com/" target="#">Saint Arnold</a>  </td>
+            </tr>
+            <tr>
+              <td>description</td>
+              <td>
+                The taste starts with a big bitter blood orange that morphs into mangos and sweet tropical fruits. There is a lightly sweet malt body that allows the hops to shine while maintaining a nice complexity to the flavors. Bitterness: 55 IBU
+                Alcohol Content (ABV): 7.1%
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+             </div>
+       
+      </div>
+
+        <div class="col-lg-6">
+          <h1 style="text-shadow: 2px 2.5px 0px #000; font-family: 'Train One', cursive;"> Wine till you SHINE </h1>
+        <a href="https://theinfinitemonkeytheorem.com/wine-shop/wa1ituco148cd4kgri13j4ff6m5wmw" target="#">
+          <img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft51.2885-15%2Fe35%2Fs480x480%2F125527444_373901467157921_4461913266209277765_n.jpg%3Ftp%3D1%26_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D105%26_nc_ohc%3DgffaYS6n8WkAX8uZ1UW%26ccb%3D7-4%26oh%3D55ee4bb8ea1de7c36779bee3d46be070%26oe%3D60877068%26_nc_sid%3Db9f2ee" class="shadow img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" style="border-radius: 02%" alt="">
+        </a>
+          <div> 
+            <table>
+              <tbody>
+                <tr>
+                  <td>Name</td>
+                  <td>Red Can Red wine</td>
+                </tr>
+                <tr>
+                  <td>wine</td>
+                  <td>A Cab Sauv Syrah blend</td>
+                </tr>
+                <tr>
+                  <td>brand</td>
+                  <td><a href="https://theinfinitemonkeytheorem.com/" target="#">The Infinite Monkey Theorem</a></td>
+                </tr>
+                <tr>
+                  <td>description</td>
+                  <td>
+                    A lightly carbonated and is at once deeply rich and freshly delightful. The palate bursts with cherries, blackberries and currants with hints of cinnamon toast on the finish. Drink anytime & anywhere. For the real wine lover who wants to drink anywhere. ABV:11.1%
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+         
+          </div>
+        </div>        
+  </div>
+  </div>
+    <!-- Canabis -->
+
+    <div class="container-fluid p-3">
+     
+      <div class="row">
+        <div class="col-4">
+          <div>
+          <h2><span style="font-size: 40px;">CANNA </span>+ <strong>bis</strong></h2>
+          <h5 id=""></h5>
+          </div>
+        </div>
+       
+        <div class="col-8 pt-4">
+          <div style="width: 850px;">
+          <p id="">Marijuana consumption is still a taboo, but it seems like the millennial generation is working hard to change this fact. They are the pioneers of recreational weed usage and the major reason why nine states decided to legalize marijuana since 2012.</p>
+
+            <p>Contrary to baby boomers, Millennials prove to be open to new experiences and hence turn into genuine drivers of social changes. And it's not only about changing the social climate – Millennials are also contributing to the growth of a brand new industry. The global cannabis market size was $10.6 billion in 2018 and it was projected to reach almost $100 billion by 2026.</p>
+           
+            </div>
+            <p class=""><i class="fas fa-user"></i> ~Anonymous</p> 
+            <button class="btn btn-outline-dark btn-large"> 
+            <a style="text-decoration: none; color: lightgray;"href="https://www.chicagotribune.com/marijuana/sns-tft-millennials-fuel-cannabis-economy-20200226-hf3aqwtx2napvdzctusdkmykxy-story.html" target="#">click here to get some reads</a></button>
+
+            <!-- ADD CLICKABLE LINK FOR ARTICAL -->
+
+            <!-- https://www.chicagotribune.com/marijuana/sns-tft-millennials-fuel-cannabis-economy-20200226-hf3aqwtx2napvdzctusdkmykxy-story.html --> 
+        </div>
+ 
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class = 'weed_img'>
+            <img src="/images/weedpen1.jpeg" style="height: 250px; width: 300px;" class = 'weed_img1'> 
+            <img src="/images/cannabis1.jpg" style="height: 250px; width: 150px;" class = 'weed_img2'>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fuild">
+      <!--Cannabis card container-->
+    <hr class="hr1">
+          <div class="row" >
+            <div class="d-flex display: center; justify-content-center"><h2>Vibin' Spring Flavors</h2></div>
+          
+          <div class="col-lg-4">
+         
+             <!-- Canabis card 1-->
+            <div class="card" style="width: 400px; height: 500px ">
+              <img class="card-img-top" style="height: 400px" src="https://www.barneysfarm.com/images/products/runtz-muffin_circle_new_21_842083.jpg" alt="Card image cap">
+       
+              <a class="btn btn-light btn-outline-success" data-toggle="collapse" data-target="#collapseExample"  role="button" aria-expanded="false" aria-controls="collapseExample"> <span class="title"> <strong>Runtz Muffin </strong> </span>
+                Description
+              </a>
+           
+              <div class="collapse" id="collapseExample">
+             
+                <div class="card-body card ">
+                The Runtz Muffin provides you with remarkable flavours and potent, balanced nature. This balanced and saucy hybrid will quickly deliver you to another flabbergasting level of relaxation, shattering any mental tensions and ensures that you can carry on through your day, protected from any worries by a glimmering ring of staggering positivity.
+               </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">70% Sativa</li>
+                <li class="list-group-item">30% Indica</li>
+                <li class="list-group-item">THC level:29%</li>
+                <li class="list-group-item"><a href="https://www.barneysfarm.com/runtz-muffin-523">Click to buy</a></li>
+              </ul>
+            </div>
+            </div>  
+             <!-- Canabis card 2-->
+             <div class="col-lg-4">
+             <div class="card" style="width: 400px;">
+              <img style="height: 400px"class="card-img-top" src="https://growdiaries.com/static/seed_item_photos/6501/sherb-crasher_700.jpg" alt="Card image cap">
+            
+              <a class="btn btn-light btn-outline-success" data-toggle="collapse" data-target="#collapseExample2"  role="button" aria-expanded="false" aria-controls="collapseExample"> <span class="title"> <strong>Animal Face </strong> </span>
+                Description
+              </a>
+              <div class="collapse" id="collapseExample2">
+              <div class="card-body">
+                <p class="card-text">It takes the piney, gassy terpene profile and potent high. Animal Face is known for giving a full mind and body-numbing high that lets you drift off into physical and mental bliss.</p>
+              </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">80% Sativa</li>
+                <li class="list-group-item">20% Indica</li>
+                <li class="list-group-item">THC level:18-26%</li>
+                <li class="list-group-item"><a href="http://seedjunky.com">Click to buy</a></li>
+              </ul>
+            </div>
+          </div>
+
+             <!-- Canabis card 3-->
+             <div class="col-lg-4">
+             <div class="card" style="width:400px; height: 500px">
+              <img class="card-img-top" style="height: 400px" src="https://www.barneysfarm.com/images/products/tropicanna-banana_circle_new_12_269446.jpg" alt="Card image cap">
+              
+              <a class="btn btn-light btn-outline-success" data-toggle="collapse" data-target="#collapseExample3"  role="button" aria-expanded="false" aria-controls="collapseExample"> <span class="title"> <strong>Tropicanna Banana</strong> </span>
+                Description
+              </a>
+               <div class="collapse" id="collapseExample3">
+              <div class="card-body">
+                <p class="card-text">A mesmerizing tropical cocktail of fresh and fruity flavours, uncompromising power and extraordinary yield potential. This remarkable hybrid is sweet, sticky, pumped up, highly potent and will leave growers gasping in awe at these high performing genetics.</p>
+              </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">60% Sativa</li>
+                <li class="list-group-item">40% Indica</li>
+                <li class="list-group-item">THC level:22-25%</li>
+                <li class="list-group-item"><a href="https://www.barneysfarm.com/tropicanna-banana-500">Click to buy</a></li>
+              </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <footer>
+          <div class="container-fluid padding">
+              <div class="row text-center">
+                  <div class="col-md-4">
+                          <h4>Follow</h4>
+                          <hr class="light">
+                          <a href="" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+                          
+                          <a href="" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+                          <a href="https://www.linkedin.com/in/bcancel91/" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a>
+                  </div>
+                  <div class="col-md-4">
+                          <h4>HQ</h4>
+                          <hr class="light">
+                        <p>123 Baked Sreet Ne</p>
+                          <p>Atlanta, GA 30300</p>
+                  </div>
+                  <div class="col-md-4">
+                          <h4>Reach out</h4>
+                          <hr class="light">
+                          <p><a href="mailto:heythere@themillemialpost.com">send us an email</a></p>
+                  </div> 
+              </div>
+          </div>
+        </footer>
+      
+    
+  
+
+    <script src="api.js">
+    </script>
+    
+ 
+</body>
+
+</html>

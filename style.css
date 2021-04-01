@@ -1,0 +1,40 @@
+.shadow {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+td {
+  padding: 15px;
+}
+.adoptionInfo {
+  padding: 100px;
+}
+#adoptText {
+  width: 500px;
+  overflow: scroll;
+}
+.cana {
+  margin-bottom: 100px;
+}
+.hr1 {
+  border-bottom: 23px ridge;
+  background-image: linear-gradient(90, #ccc, #333, #ccc);
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.robotoText {
+  font-family: "Roboto Mono", monospace;
+}
+.float {
+  float: right;
+  margin-top: 10%;
+}
+
+a:hover {
+  background-color: black;
+}
+.title {
+  display: inline-block;
+}
+.card-text1 {
+  overflow: scroll;
+}
